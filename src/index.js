@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import BoxCon from './container/box-container.js'
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
+
+class App extends React.Component {
+	render(){
+		return (
+			<BoxCon />
+			);
+	}
+}
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
