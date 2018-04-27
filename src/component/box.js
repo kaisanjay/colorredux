@@ -5,7 +5,7 @@ class Box extends React.Component {
 	render(){
 		return (
 			<div className="box centered">
-			<button className="btn btn-danger" align="center">
+			<button className="btn btn-danger">
 			 Change Color
 			</button>
 			</div>
