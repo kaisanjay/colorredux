@@ -7,6 +7,8 @@ import reducers from './reducer/index.js';
 import BoxCon from './container/box-container.js'
 import './index.css';
 
+let store = createStore(reducers, applyMiddleware(thunk))
+
 
 class App extends React.Component {
 	render(){
@@ -15,4 +17,5 @@ class App extends React.Component {
 			);
 	}
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
